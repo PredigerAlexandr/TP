@@ -14,3 +14,5 @@ for i in string:
     else:
         res+= i
 print(res)
+print(res)
+print(res)
