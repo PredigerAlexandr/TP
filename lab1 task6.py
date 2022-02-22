@@ -19,5 +19,3 @@ for mounth in mounths:
         print(res)
     if mounth not in list:
         print('')
-
-
