@@ -17,7 +17,7 @@ while word != '':
             else:
                 flag = False
                 break
-    if flag == True:
+    if flag:
         list.append(word)
 if list:
     for i in list:

@@ -1,10 +1,8 @@
 from email.policy import default
 
 a_list = ['a', 'e', 'i', 'o', 'u', 'y']
-b_list = ['b', 'c', 'd', 'f', 'g', 'h',
-           'j', 'k', 'l', 'm', 'n', 'p',
-           'q', 'r', 's', 't', 'v', 'w',
-           'x', 'z']
+b_list = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z']
+
 
 def ask_password(login, password, success, failure):
     if dict.get(password) != None:
@@ -43,8 +41,7 @@ def main(login, password):
     if e:
         print('Привет, ' + login.lower() + '!')
     else:
-        print('Кто-то пытался притвориться пользователем ' + login.lower() + ', но в пароле '
-                                                                             'допустил ошибку: ' + mes.upper() + '.')
+        print('Кто-то пытался притвориться пользователем ' + login.lower() + ', но в пароле допустил ошибку: ' + mes.upper() + '.')
 
 import re
 dict = {}
