@@ -19,24 +19,12 @@ class SquareSummator(Summator):
     def transform(self, n):
         return n**2
 
-    def Sum(self, n):
-        count = 0
-        for i in range(n + 1):
-            count += self.transform(i)
-        return count
-
 class CubSummator(Summator):
     def __init__(self, N=0):
         super().__init__(N)
 
     def transform(self, n):
         return n**3
-
-    def Sum(self, n):
-        count = 0
-        for i in range(n + 1):
-            count += self.transform(i)
-        return count
 
 
 summator = Summator()

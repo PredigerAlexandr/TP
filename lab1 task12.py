@@ -24,12 +24,9 @@ class SquareSummator(PowerSummator):
 
 
 
-class CubSummator(PowerSummator, Summator):
-    def __init__(self, degree=3):
-        PowerSummator.__init__(self, degree)
-        Summator.__init__(self)
-        self.degree = degree
-
+class CubSummator(PowerSummator):
+    def __init__(self):
+        super().__init__(3)
 
 summator = PowerSummator(10)
 per = summator.Sum(5)
